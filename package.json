@@ -1,8 +1,10 @@
 {
-  "name": "docs",
-  "version": "0.0.1",
-  "description": "Awayjs documentation",
-  "main": "index.js",
+  "name": "typedoc-packages-example",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "node_modules/@awayjs/*"
+  ],
   "scripts": {
     "rimraf": "rimraf",
     "docs": "npm run docs:clear && npm run build && npm run docs:misc",

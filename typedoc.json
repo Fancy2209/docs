@@ -18,10 +18,10 @@
     // package. We don't use this here as relying on it would prevent us from running
     // TypeDoc individually in each package, which is required for the advanced method
     // of generating monorepo documentation.
-    // "packageOptions": {
-    //   "includeVersion": true,
-    //   "entryPoints": ["index.ts"]
-    // }
+    "packageOptions": {
+      "includeVersion": true,
+      "entryPoints": ["index.ts"]
+    },
 
     // Potentially useful for debugging
     "logLevel": "Verbose"

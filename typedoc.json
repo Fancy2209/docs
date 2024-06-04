@@ -9,7 +9,7 @@
         "node_modules/@awayjs/stage",
         "node_modules/@awayjs/view"
     ],
-    "name": "AwayJS Docs",
+    "name": "AwayJS",
     "entryPointStrategy": "packages",
     "includeVersion": false,
     "out": "./bin",

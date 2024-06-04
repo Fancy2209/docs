@@ -9,7 +9,7 @@ jobs:
       with:
         node-version: 20
 
-    - run: npm i -g yarn && yarn && yarn run docs
+    - run: npm i -g yarn && yarn install --frozen-lockfile && yarn run docs
 
     - uses: actions/upload-artifact@v4
       with:

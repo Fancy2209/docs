@@ -1,5 +1,6 @@
 {
     "entryPoints": [
+        //TO DO: Update Parsers, replace player with AwayFL
         "node_modules/@awayjs/core",
         "node_modules/@awayjs/graphics",
         "node_modules/@awayjs/materials",
@@ -12,6 +13,7 @@
     "entryPointStrategy": "packages",
     "includeVersion": false,
     "out": "./bin",
+    "readme": "includes/home.md",
 
     "packageOptions": {
       "includeVersion": true,
@@ -20,7 +22,8 @@
         "node_modules",
         "dist",
         "tests"
-      ]
+      ],
+      "readme": "README.md"
     },
 
     "logLevel": "Verbose"

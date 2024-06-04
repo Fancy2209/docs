@@ -3,7 +3,6 @@
   "references": [
       {
           "path": "node_modules/@awayjs/core"
-          
       },
       {
           "path": "node_modules/@awayjs/graphics"

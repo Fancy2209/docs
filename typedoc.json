@@ -20,7 +20,12 @@
     // of generating monorepo documentation.
     "packageOptions": {
       "includeVersion": true,
-      "entryPoints": ["index.ts"]
+      "entryPoints": ["index.ts"],
+      "exclude": [
+        "node_modules",
+        "dist",
+        "tests"
+      ]
     },
 
     // Potentially useful for debugging

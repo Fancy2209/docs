@@ -10,7 +10,7 @@
     "docs": "npm run docs:clear && npm run build && npm run docs:misc",
     "docs:clear": "npm run rimraf -- bin",
     "docs:misc": "cp-cli theme/assets/images/favicon.ico bin/favicon.ico",
-    "build": "tsc --build && typedoc --readme includes/home.md"
+    "build": "npx tsc --build && npx typedoc --readme includes/home.md"
   },
   "repository": {
     "type": "git",

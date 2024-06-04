@@ -1,14 +1,27 @@
 {
-  "compilerOptions": {
-    "target": "ES5",
-    "module": "ES2015",
-    "moduleResolution": "node",
-    "noImplicitUseStrict": true,
-    "noEmitHelpers": true,
-    "importHelpers": true,
-    "declaration": true,
-    "outDir": "./dist"
-  },
-  "files": [
+  "files": [],
+  "references": [
+      {
+          "path": "node_modules/@awayjs/core"
+          
+      },
+      {
+          "path": "node_modules/@awayjs/graphics"
+      },
+      {
+          "path": "node_modules/@awayjs/materials"
+      },
+      {
+          "path": "node_modules/@awayjs/renderer"
+      },
+      {
+          "path": "node_modules/@awayjs/scene"
+      },
+      {
+          "path": "node_modules/@awayjs/stage"
+      },
+      {
+          "path": "node_modules/@awayjs/view"
+      }
   ]
 }

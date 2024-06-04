@@ -2,22 +2,13 @@
   "name": "docs",
   "version": "0.0.1",
   "description": "Awayjs documentation",
-  "main": "index.js",
+  "main": "lib/dummy.ts",
   "scripts": {
     "rimraf": "rimraf",
-    "docs": "npm run docs:clear && npm run docs:wrapper && npm run docs:core && npm run docs:graphics && npm run docs:materials && npm run docs:parsers && npm run docs:player && npm run docs:renderer && npm run docs:scene && npm run docs:stage && npm run docs:view && npm run docs:misc",
+    "docs": "npm run docs:clear && npm run build && npm run docs:misc",
     "docs:clear": "npm run rimraf -- bin",
     "docs:misc": "cp-cli theme/assets/images/favicon.ico bin/favicon.ico",
-    "docs:core": "node awaydoc.js --name=core --tsconfig=node_modules/@awayjs/core/tsconfig.json --sources=node_modules/@awayjs/core/lib --out=bin/core --useParentAssets=true",
-    "docs:graphics": "node awaydoc.js --name=graphics --tsconfig=node_modules/@awayjs/graphics/tsconfig.json --sources=node_modules/@awayjs/graphics/lib --out=bin/graphics --useParentAssets=true",
-    "docs:materials": "node awaydoc.js --name=materials --tsconfig=node_modules/@awayjs/materials/tsconfig.json --sources=node_modules/@awayjs/materials/lib --out=bin/materials --useParentAssets=true",
-    "docs:parsers": "node awaydoc.js --name=parsers --tsconfig=node_modules/@awayjs/parsers/tsconfig.json --sources=node_modules/@awayjs/parsers/lib --out=bin/parsers --useParentAssets=true",
-    "docs:player": "node awaydoc.js --name=player --tsconfig=node_modules/@awayjs/player/tsconfig.json --sources=node_modules/@awayjs/player/lib --out=bin/player --useParentAssets=true",
-    "docs:renderer": "node awaydoc.js --name=renderer --tsconfig=node_modules/@awayjs/renderer/tsconfig.json --sources=node_modules/@awayjs/renderer/lib --out=bin/renderer --useParentAssets=true",
-    "docs:scene": "node awaydoc.js --name=scene --tsconfig=node_modules/@awayjs/scene/tsconfig.json --sources=node_modules/@awayjs/scene/lib --out=bin/scene --useParentAssets=true",
-    "docs:stage": "node awaydoc.js --name=stage --tsconfig=node_modules/@awayjs/stage/tsconfig.json --sources=node_modules/@awayjs/stage/lib --out=bin/stage --useParentAssets=true",
-    "docs:view": "node awaydoc.js --name=view --tsconfig=node_modules/@awayjs/view/tsconfig.json --sources=node_modules/@awayjs/view/lib --out=bin/view --useParentAssets=true",
-    "docs:wrapper": "node awaydoc.js --name=@awayjs --tsconfig=tsconfig.json --sources=lib --out=bin"
+    "build": "tsc --build && typedoc"
   },
   "repository": {
     "type": "git",
@@ -36,19 +27,17 @@
   },
   "homepage": "https://github.com/awayjs/docs#readme",
   "dependencies": {
-    "@awayjs/core": "^0.6.62",
-    "@awayjs/graphics": "^0.1.11",
-    "@awayjs/materials": "^0.3.33",
-    "@awayjs/parsers": "^0.5.60",
-    "@awayjs/player": "^0.5.29",
-    "@awayjs/renderer": "^0.8.58",
-    "@awayjs/scene": "^0.8.91",
-    "@awayjs/stage": "^0.8.49",
-    "@awayjs/view": "^0.2.10",
-    "cp-cli": "^1.0.2",
-    "minimist": "^1.2.0",
-    "rimraf": "^2.6.1",
-    "typedoc": "^0.5.7",
-    "typescript": "2.2.0-dev.20161123"
+    "@awayjs/core": "^0.9.47",
+    "@awayjs/graphics": "^0.5.90",
+    "@awayjs/materials": "^0.6.16",
+    "@awayjs/renderer": "^0.11.65",
+    "@awayjs/scene": "^0.13.279",
+    "@awayjs/stage": "^0.11.145",
+    "@awayjs/view": "^0.6.64",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^5.0.7",
+    "tslib": "2.3.0",
+    "typedoc": "^0.25.13",
+    "typescript": "^4.9.5"
   }
 }

@@ -5,7 +5,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "master", "New-Typedoc" ]
+    branches: [ "master" ]
   repository_dispatch:
     types: [ doc_build ]
   workflow_dispatch:

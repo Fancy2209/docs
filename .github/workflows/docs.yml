@@ -24,7 +24,6 @@ jobs:
     - name: build
       run: |
        npm i
-       mv node_modules/@awayjs/stage/lib/image/Index.ts node_modules/@awayjs/stage/lib/image/index.ts
        npm run docs --if-present       
     
     - name: Configure Github Pages

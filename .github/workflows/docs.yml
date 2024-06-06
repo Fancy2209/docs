@@ -21,6 +21,7 @@ jobs:
     - name: build
       run: |
        npm i
+       mv node_modules/@awayjs/stage/Index.ts node_modules/@awayjs/stage/index.ts
        npm run docs --if-present       
               
     - name: Upload GitHub Pages artifact

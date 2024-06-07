@@ -23,7 +23,7 @@ jobs:
         cache: 'npm'
     - name: build
       run: |
-       npm i
+       npm ci
        npm run docs --if-present       
     
     - name: Configure Github Pages

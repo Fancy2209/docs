@@ -24,7 +24,6 @@
         "tests"
       ],
       //This is needed on windows 
-      "disableGit": true,
       "readme": "README.md"
     },
 

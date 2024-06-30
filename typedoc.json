@@ -1,13 +1,14 @@
 {
     "entryPoints": [
-        //TO DO: Update Parsers, replace player with AwayFL
+        //TO DO: Add Parsers when they work again
         "node_modules/@awayjs/core",
         "node_modules/@awayjs/graphics",
         "node_modules/@awayjs/materials",
         "node_modules/@awayjs/renderer",
         "node_modules/@awayjs/scene",
         "node_modules/@awayjs/stage",
-        "node_modules/@awayjs/view"
+        "node_modules/@awayjs/view",
+        //"node_modules/@awayjs/parsers",
     ],
     "name": "AwayJS",
     "entryPointStrategy": "packages",
